@@ -16,7 +16,7 @@ class Tracker:
 
 
     def minutes_since_start(self):
-        return int((datetime.now() - start).total_seconds())
+        return int((datetime.now() - start).total_seconds() / 60)
 
     def add(self, tokens):
         minutes = self.minutes_since_start()
